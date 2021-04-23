@@ -1,0 +1,150 @@
+:root {
+  font-size: 15px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Poppins", sans-serif;
+  color: #a3a5ae;
+}
+
+main {
+  width: 85%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 5em 0 3.5em 0;
+  min-width: 350px;
+}
+
+h2 {
+  text-align: center;
+}
+
+h2.thin {
+  font-weight: 200;
+  color: #6a6f81;
+}
+
+h2.bold {
+  padding-bottom: 1rem;
+  color: #4c4e61;
+}
+
+p {
+  text-align: center;
+  padding-bottom: 4em;
+}
+
+.section1 p,
+.section2 p,
+.section3 p,
+.section4 p {
+  text-align: left;
+  padding-top: 0.3em;
+  font-size: 0.93em;
+  line-height: 1.8em;
+}
+
+.section1,
+.section2,
+.section3,
+.section4 {
+  height: 230px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.01), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 2em;
+  padding: 1.5em 1.5em 0 1.5em;
+  position: relative;
+}
+
+img {
+  right: 30px;
+  bottom: 30px;
+  position: absolute;
+}
+
+.section1 {
+  border-top: 4px solid #45d3d3;
+}
+
+.section2 {
+  border-top: 4px solid #ea5353;
+}
+
+.section3 {
+  border-top: 4px solid #fcaf4a;
+}
+
+.section4 {
+  border-top: 4px solid #549ef2;
+}
+
+.section1 h3,
+.section2 h3,
+.section3 h3,
+.section4 h3 {
+  color: #4c4e61;
+  font-size: 1.4em;
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    margin: 0;
+    margin-top: 4em;
+    overflow: hidden;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
+  .thin,
+  .bold {
+    font-size: 2.4em;
+  }
+  .main p {
+    margin: 0 23em;
+  }
+  .section1,
+  .section2,
+  .section3,
+  .section4 {
+    width: 350px;
+    overflow: hidden;
+  }
+  .images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2em;
+  }
+  .right,
+  .left {
+    top: 9em;
+    position: relative;
+  }
+}
+/*# sourceMappingURL=style.css.map */
